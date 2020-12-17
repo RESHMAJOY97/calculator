@@ -1,0 +1,44 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#A9F195"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_margin="30px"
+        android:text="ARITHMETIC OPERATIONS"
+        android:textSize="80px"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_margin="20px"
+        android:background="@drawable/a1"
+        android:onClick="f1"
+        android:text="ADDTION"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_margin="20px"
+        android:background="@drawable/a2"
+        android:onClick="f2"
+        android:text="SUBTRACTION "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_margin="20px"
+        android:background="@drawable/a3"
+        android:onClick="f3"
+        android:text="MULTIPLICATION"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_margin="20px"
+        android:background="@drawable/a4"
+        android:onClick="f4"
+        android:text="DIVISION"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
