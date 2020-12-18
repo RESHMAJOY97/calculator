@@ -1,44 +1,177 @@
 <LinearLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="#A9F195"
     android:gravity="center"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView
-        android:layout_margin="30px"
-        android:text="ARITHMETIC OPERATIONS"
-        android:textSize="80px"
+        android:text="ARITHMETIC OPERATION"
+        android:textSize="24dp"
         android:gravity="center"
+        android:textColor="#EC0855"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_margin="20px"
-        android:background="@drawable/a1"
-        android:onClick="f1"
-        android:text="ADDTION"
+    <GridLayout
+        android:layout_margin="30dp"
+        android:rowCount="2"
+        android:columnCount="2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_margin="20px"
-        android:background="@drawable/a2"
-        android:onClick="f2"
-        android:text="SUBTRACTION "
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_margin="20px"
-        android:background="@drawable/a3"
-        android:onClick="f3"
-        android:text="MULTIPLICATION"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_margin="20px"
-        android:background="@drawable/a4"
-        android:onClick="f4"
-        android:text="DIVISION"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView android:layout_height="wrap_content"
+
+            android:layout_width="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            app:cardCornerRadius="10dp"
+            android:elevation="12dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="15dp">
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:onClick="f1"
+                    android:background="@drawable/add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="15dp"
+                    android:text="ADDITION"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_height="wrap_content"
+
+
+            android:layout_width="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            app:cardCornerRadius="12dp"
+            android:elevation="12dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="15dp">
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+android:onClick="f2"
+                    android:background="@drawable/sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="15dp"
+                    android:text="SUBTRACTION"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_height="wrap_content"
+
+            android:layout_width="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            app:cardCornerRadius="12dp"
+            android:elevation="12dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="15dp">
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:onClick="f3"
+                    android:background="@drawable/mul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="15dp"
+                    android:text="MULTIPLIACTION"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:layout_height="wrap_content"
+
+            android:layout_width="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            app:cardCornerRadius="12dp"
+            android:elevation="12dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="15dp">
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:onClick="f4"
+                    android:background="@drawable/div"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="15dp"
+                    android:text="DIVISION"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+<!--    <TextView-->
+<!--        android:layout_margin="30px"-->
+<!--        android:text="ARITHMETIC OPERATIONS"-->
+<!--        android:textSize="80px"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:layout_margin="20px"-->
+<!--        android:background="@drawable/a1"-->
+<!--        android:onClick="f1"-->
+<!--        android:text="ADDTION"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:layout_margin="20px"-->
+<!--        android:background="@drawable/a2"-->
+<!--        android:onClick="f2"-->
+<!--        android:text="SUBTRACTION "-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:layout_margin="20px"-->
+<!--        android:background="@drawable/a3"-->
+<!--        android:onClick="f3"-->
+<!--        android:text="MULTIPLICATION"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:layout_margin="20px"-->
+<!--        android:background="@drawable/a4"-->
+<!--        android:onClick="f4"-->
+<!--        android:text="DIVISION"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
 
 </LinearLayout>
